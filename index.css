@@ -194,10 +194,6 @@ body {
     margin: 80px 200px 0 auto;
 }
 
-.last {
-    border-bottom: 8px solid rgb(61, 61, 61);
-}
-
 .footer-2>h4 {
     color: white;
     font-family: mysecondfont;
