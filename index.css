@@ -1,0 +1,515 @@
+@font-face {
+    font-family: mysecondfont;
+    src: url("fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+    font-family: myhindifont;
+    src: url("fonts/NotoSans-Regular.ttf")
+}
+
+@font-face {
+    font-family: mymediumfont;
+    src: url("fonts/Roboto-Regular.ttf")
+}
+
+@font-face {
+    font-family: mylightfont;
+    src: url("fonts/Roboto-Light.ttf")
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: fit-content;
+    background-color: black;
+}
+
+
+/* Body start */
+
+
+/* Page-1 */
+
+.page-1 {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.logo {
+    width: 180px;
+    margin-left: 50px;
+    margin-top: 35px;
+}
+
+.select {
+    border: 0.2px solid white;
+    border-radius: 3px;
+    padding: 6px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    margin-right: 20px;
+    margin-top: 35px;
+    float: right;
+}
+
+.sign-in {
+    border-radius: 3px;
+    padding: 7px 15px;
+    background-color: rgb(214, 4, 4);
+    color: white;
+    font-size: 16px;
+    margin-right: 20px;
+    margin-top: 35px;
+    float: right;
+    border-style: none;
+}
+
+.sign-in:hover {
+    background-color: rgb(245, 24, 24);
+}
+
+.main-heading {
+    width: 50%;
+    margin: 130px auto 0 auto;
+    color: white;
+    text-align: center;
+}
+
+.main-heading>h1 {
+    line-height: 60px;
+    font-family: mysecondfont;
+    font-size: 3.8em;
+    ;
+}
+
+.main-heading>h2 {
+    font-family: mylightfont;
+    font-size: 1.5em;
+    margin-top: 25px;
+}
+
+.main-heading>h3 {
+    font-family: mylightfont;
+    font-size: 1.2em;
+}
+
+.hindi {
+    font-family: myhindifont;
+}
+
+.start {
+    margin: auto;
+    border-style: none;
+    border-collapse: collapse;
+    height: 60px;
+    display: inline-block;
+    width: 200px;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(214, 4, 4);
+}
+
+.start:hover {
+    background-color: rgb(245, 24, 24);
+}
+
+.log-in {
+    display: inline;
+    height: fit-content;
+    margin: auto;
+}
+
+.log-in>input {
+    display: inline-block;
+    height: 60px;
+    width: 450px;
+    font-size: 15pt;
+    margin-left: 25%;
+}
+
+
+/* Page-2 */
+
+.page-2 {
+    height: 475px;
+    width: 100%;
+    border-top: 8px solid rgb(61, 61, 61);
+    display: flex;
+}
+
+.text {
+    display: inline-block;
+    width: 50%;
+    margin: auto auto auto 140px;
+}
+
+.text>h1 {
+    font-family: mysecondfont;
+    width: 70%;
+    color: white;
+    font-size: 50px;
+}
+
+.text>h2 {
+    font-family: mylightfont;
+    width: 70%;
+    color: white;
+    font-size: 28px;
+    font-weight: 50;
+}
+
+.tv {
+    margin: 100px 200px 0 0;
+    width: 32%;
+    height: 300px;
+}
+
+.mobile {
+    display: inline;
+    float: right;
+    width: 30%;
+    height: 350px;
+    margin: 80px 200px 0 auto;
+}
+
+.xbox {
+    display: inline;
+    float: right;
+    width: 30%;
+    height: 350px;
+    margin: 80px 200px 0 auto;
+}
+
+.children {
+    display: inline;
+    float: right;
+    width: 38%;
+    height: 350px;
+    margin: 80px 200px 0 auto;
+}
+
+.last {
+    border-bottom: 8px solid rgb(61, 61, 61);
+}
+
+.footer-2>h4 {
+    color: white;
+    font-family: mysecondfont;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.flex {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 30px 20px;
+    color: rgb(167, 167, 167);
+    font-family: mylightfont;
+    list-style: none;
+    width: 60%;
+    margin: auto;
+}
+
+.select-2 {
+    border: 0.2px solid white;
+    border-radius: 3px;
+    padding: 6px;
+    margin: 35px auto 10px auto;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+}
+
+.last {
+    width: 60%;
+    margin: auto;
+}
+
+.last>h4 {
+    color: white;
+    font-family: mylightfont;
+}
+
+
+/* Footer start */
+
+.footer>h2 {
+    color: white;
+    font-family: mysecondfont;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* Media-query for i-pad user*/
+
+@media screen and (max-width:950px) and (min-width:600px) {
+    .page-1 {
+        height: cover;
+    }
+    .main-heading>h1 {
+        line-height: 50px;
+        font-family: mysecondfont;
+        font-size: 3.0em;
+    }
+    .main-heading>h2 {
+        font-family: mylightfont;
+        font-size: 1.5em;
+        margin-top: 25px;
+    }
+    .main-heading>h3 {
+        font-family: mylightfont;
+        font-size: 1.2em;
+    }
+    .hindi {
+        font-family: myhindifont;
+    }
+    .start {
+        height: 40px;
+        display: inline-block;
+        width: 150px;
+        font-size: 20px;
+    }
+    .start:hover {
+        background-color: rgb(245, 24, 24);
+    }
+    .log-in {
+        display: inline;
+    }
+    .log-in>input {
+        display: inline-block;
+        height: 40px;
+        width: 300px;
+        font-size: 15pt;
+    }
+    /* Body start */
+    .page-2 {
+        display: block;
+        height: 500px;
+        width: 100%;
+    }
+    .text {
+        display: block;
+        margin: auto;
+    }
+    .text>h1 {
+        font-family: mysecondfont;
+        width: 100%;
+        text-align: center;
+        margin: 20px auto auto auto;
+        color: white;
+        font-size: 40px;
+    }
+    .text>h2 {
+        font-family: mymediumfont;
+        width: 100%;
+        text-align: center;
+        margin: 20px auto auto auto;
+        color: white;
+        font-size: 20px;
+        font-weight: 50;
+    }
+    .tv {
+        display: block;
+        width: 300px;
+        align-items: center;
+        margin: 40px auto auto auto;
+        height: 200px;
+    }
+    .mobile {
+        display: block;
+        width: 300px;
+        align-items: center;
+        margin: 40px 30% auto auto;
+        height: 200px;
+    }
+    .xbox {
+        display: block;
+        width: 300px;
+        align-items: center;
+        margin: 40px 30% auto auto;
+        height: 200px;
+    }
+    .children {
+        display: block;
+        width: 300px;
+        align-items: center;
+        margin: 40px 30% auto auto;
+        height: 200px;
+    }
+    /* Footer start */
+    .footer {
+        height: 160px;
+        padding-top: 30px;
+    }
+}
+
+
+/*Media-query For mobile screen */
+
+@media screen and (max-width:600px) and (min-width:300px) {
+    .page-1 {
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("./images/img.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* background-position: center; */
+        height: 75vh;
+    }
+    .logo {
+        width: 28%;
+        margin-left: 20px;
+        margin-top: 25px;
+    }
+    .select {
+        margin-right: 10px;
+        margin-top: 25px;
+        float: right;
+        width: 110px;
+        height: 35px;
+    }
+    .sign-in {
+        margin-top: 25px;
+        margin-right: 5px;
+        height: 35px;
+    }
+    .main-heading {
+        width: 80%;
+        margin: 60px auto 0 auto;
+        color: white;
+        text-align: center;
+    }
+    .main-heading>h1 {
+        line-height: 30px;
+        font-family: mysecondfont;
+        font-size: 1.8em;
+    }
+    .main-heading>h2 {
+        font-family: mylightfont;
+        font-size: 1.2em;
+        margin-top: 25px;
+    }
+    .main-heading>h3 {
+        font-family: mylightfont;
+        font-size: 1.1em;
+    }
+    .start {
+        margin-top: 15px;
+        margin-bottom: 20px;
+        height: 40px;
+        display: block;
+        width: 120px;
+        font-size: 15px;
+    }
+    .log-in {
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    .log-in>input {
+        display: block;
+        height: 40px;
+        width: 80%;
+        margin: auto;
+        font-size: 15px;
+    }
+    /* Body start */
+    .page-2 {
+        display: block;
+        height: 500px;
+        width: 100%;
+    }
+    .text {
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    .text>h1 {
+        font-family: mysecondfont;
+        width: 80%;
+        text-align: center;
+        margin: 50px auto auto auto;
+        font-size: 1.6em;
+    }
+    .text>h2 {
+        font-family: mymediumfont;
+        width: 90%;
+        text-align: center;
+        margin: 15px auto auto auto;
+        font-size: 1.2em;
+    }
+    .tv {
+        display: block;
+        width: 280px;
+        align-items: center;
+        margin: 35px auto auto auto;
+        height: 180px;
+    }
+    .mobile {
+        display: block;
+        width: 300px;
+        align-items: center;
+        margin: 40px 12% auto auto;
+        height: 200px;
+    }
+    .xbox {
+        display: block;
+        width: 300px;
+        align-items: center;
+        margin: 40px 12% auto auto;
+        height: 200px;
+    }
+    .children {
+        display: block;
+        width: 300px;
+        align-items: center;
+        margin: 40px 12% auto auto;
+        height: 200px;
+    }
+    /* Footer start */
+    .footer {
+        height: 250px;
+        /* padding-top: 30px; */
+    }
+    .footer>h2 {
+        width: 80%;
+        margin: auto;
+        color: white;
+        text-align: center;
+        font-family: mysecondfont;
+    }
+    .flex {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        gap: 30px 20px;
+        font-family: mylightfont;
+        width: 250px;
+        margin: auto;
+    }
+    .select-2 {
+        border: 0.2px solid white;
+        border-radius: 3px;
+        padding: 4px;
+        margin: 35px auto 10px auto;
+        background-color: black;
+        color: white;
+        font-size: 14px;
+    }
+    .last {
+        width: 60%;
+        margin: auto;
+    }
+    .last>h4 {
+        font-size: 15px;
+        font-family: mylightfont;
+        color: rgb(255, 255, 255);
+    }
+}
