@@ -247,6 +247,9 @@ body {
 /* Media-query for i-pad user*/
 
 @media screen and (max-width:950px) and (min-width:600px) {
+    .page-1 {
+        height: cover;
+    }
     .main-heading>h1 {
         line-height: 50px;
         font-family: mysecondfont;
