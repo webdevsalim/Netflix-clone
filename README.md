@@ -1,2 +1,2 @@
 # Netflix-clone
-Clone responsive website of Netflix
+Clone responsive website of Netflix.
